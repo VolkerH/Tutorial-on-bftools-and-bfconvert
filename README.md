@@ -21,7 +21,7 @@ Using a database such as Omero is an alternative (and arguably "better") approac
 
 ### Audience
 
-This document should serve as a short overview of how to install and run `bfconvert` for facility users who have little experience of working with the command line.
+This document should serve as a short overview of how to install the Bioformats commandline tools and how to use `bfconvert` to split and convert imagess for facility users who have little experience of working with the command line.
 
 
 ## A quick example:
@@ -29,7 +29,29 @@ This document should serve as a short overview of how to install and run `bfconv
 
 ## Download and installation
 
+Download the latest version of the Bioformats command line tools [here](https://downloads.openmicroscopy.org/bio-formats/latest/artifacts/bftools.zip) and extract the `.zip`-Archive.
+
+The tools are _portable_, i.e. you can run them from the directory you unzip them to and they don't need an installer.
+
 ## Basic commandline concepts
+
+# Starting a command line interpreter (or terminal)
+
+On Windows the standard commandline interpreter is `cmd.exe` (there is also Windows Powershell and more recently a Terminal application). The instructions here are for `cmd.exe`. Click on the Search icon next to the Windows start menu and type `cmd.exe`. The command prompt app should be the main search result, click on it (or press enter to start it).
+
+On the Mac, [`Terminal.app`](https://support.apple.com/en-au/guide/terminal/welcome/mac) is the standard commandline executor. You can find it in `/Applications/Utilities/` or use the search function and start typing `Terminal`.
+
+If you use Linux, we assume you are already familiar with command line usage. Otherwise, you can pretty much follow the instructions. 
+
+
+# Typing a command 
+
+
+
+# Concept of working directory and `PATH` environment
+
+
+
 
 ## Conversion string
 
