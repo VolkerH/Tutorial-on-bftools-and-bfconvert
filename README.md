@@ -64,6 +64,10 @@ bfconvert --help
 For a given file format you may have to try out first what `series` and other metadata fields correspond to. In my experience, for `.lif` files (Leica) the different series indices correspond to different positions of a multiposition scan. 
 In some cases, it can also happen that certain indices are swapped. 
 
+## zero-padding of numbers 
+
+You almost always want to pass the `-padded` option to bfconvert. This makes sure that all numbers in the filename will have the same number of digits, e.g. `1` will be converted to `001` if there are more than 100 images in the series. This greatly helps with sorting files in Windows explorer, Mac Finder and other tools which typically use alphabetical (rather than natural) sorting. 
+
 ## Do I use `%` or `%%` ?
 
 ### Windows
