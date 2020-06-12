@@ -40,6 +40,50 @@ The tools are _portable_, i.e. you can run them from the directory you unzip the
 
 If you have never worked with the command line, have a look at [command line basics](./terminal_basics.md) first.
 
-## Conversion string
+## Format string
+
+```
+bfconvert --help
+```
+
+```
+   Pattern:     Metadata value:
+   ---------------------------
+   %s           series index
+   %n           series name
+   %c           channel index
+   %w           channel name
+   %z           Z index
+   %t           T index
+   %A           acquisition timestamp
+   %x           row index of the tile
+   %y           column index of the tile
+   %m           overall tile index
+```
+
+For a given file format you may have to try out first what `series` and other metadata fields correspond to. In my experience, for `.lif` files (Leica) the different series indices correspond to different positions of a multiposition scan. 
+In some cases, it can also happen that certain indices are swapped. 
 
 ## Do I use `%` or `%%` ?
+
+### Windows
+There is peculiarity when passing the format string to bfconvert on Windows. The windows command interpreter treats `%` as a special character to denote variables. So the interpreter will not pass on the `%` in your format string to bfconvert. You need to explicitly tell the command interpreter that you want to pass on the `%` literally by preceeding it with an additional `%`, thus each of the patterns above must start with a `%%` in `cmd.exe`
+
+### Unix (Mac/Linux)
+The default shell will pass the `%` literally to bfconvert, you don't need to prepend anything
+
+## Whitespace in file and folder names
+
+When working on the command line, white space characters in file and folder names are an annoyance. 
+If you try and pass a file name that contains spaces as an option to a command line program, the command interpreter sees several separate arguments, e.g. for a command such as
+
+```
+bfconvert My File.czi My Output File.tif
+```
+
+the first argument passed to bfconvert will be just `My` (rather than `My File.czi`)  and the last argument will be just `File.tif` (rather than `My Output File.tif`). There are several different ways to tell the command line interpreter that the white spaces are part of the file name, one possible way is simply to use quotes around each element:
+
+```
+bfconvert "My File.czi" "My Output File.tif"
+```
+
