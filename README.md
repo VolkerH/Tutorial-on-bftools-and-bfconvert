@@ -15,6 +15,22 @@ Even for batch analysis software that has Bioformats built-in ([CellProfiler](ht
 
 Research labs who adopt such an approach often have their own scripts or macros to do this. However, in many cases  `bfconvert` from the [Bioformats command line tools](https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/index.html) can handle this task such that no custom scripts are needed.
 
+### Alternatives
+
+Using a database such as Omero is an alternative (and arguably "better") approach to standardizing input files from heterogenous microscopes. However, in particular for smaller labs/facilities, introducing a database systems also comes with challenges (administration, user training).
+
 ### Audience
 
-This document should serve as a short overview of how to install and run th
+This document should serve as a short overview of how to install and run `bfconvert` for facility users who have little experience of working with the command line.
+
+
+## A quick example:
+
+
+## Download and installation
+
+## Basic commandline concepts
+
+## Conversion string
+
+## Do I use `%` or `%%` ?
