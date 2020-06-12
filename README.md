@@ -36,7 +36,9 @@ Download the latest version of the Bioformats command line tools [here](https://
 The tools are _portable_, i.e. you can run them from the directory you unzip them to and they don't need an installer.
 
 
+## Command line basics
 
+If you have never worked with the command line, have a look at [command line basics](./terminal_basics.md) first.
 
 ## Conversion string
 
