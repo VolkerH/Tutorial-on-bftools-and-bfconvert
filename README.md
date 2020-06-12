@@ -1,4 +1,4 @@
-# Short tutorial on how to split, convert and rename microscopy images using `bfconvert`
+# How to split, convert and rename microscopy images using `bfconvert`
 
 ## Aim / Audience
 
