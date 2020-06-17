@@ -53,11 +53,34 @@ The tools are _portable_, i.e. you can run them from the directory you unzip the
 
 If you have never worked with the command line, have a look at [command line basics](./terminal_basics.md) first.
 
-## Format string
+## `bfconvert` common use case.
 
+Most commonly you want to use `bfconvert` in the following way:
+
+```
+bfconvert inputfile  outputfilepattern
+```
+
+or
+
+```
+bfconvert -padded inputfile  outputfilepattern
+```
+
+where `inputfile` is the path to the input file and `outputfilepattern` specifies the output file path and format string.
+See below for an explanation of the `-padded` option.
+
+There are a plethora of additional options that are beyond the scope of this beginners tutorial. You can see them by typing
 ```
 bfconvert --help
 ```
+
+## Format string
+
+The `outputfilepattern` is not a single filename but rather a format string that defines a filename template.
+After all we want to split a single file into many files, so we need to specify how the many files are named.
+`bfconvert` replaces parts of the format string with the index number or name of the particular
+subset of the input file that is written to a given output file, according to the following pattern:
 
 ```
    Pattern:     Metadata value:
