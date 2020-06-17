@@ -1,5 +1,7 @@
 # How to split, convert and rename microscopy images using `bfconvert`
 
+<img src="./bfconvert_explorer_view.png" width=700>
+
 ## Aim / Audience
 
 ### Format conversion, splitting and renaming
