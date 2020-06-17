@@ -28,6 +28,17 @@ This document should serve as a short overview of how to install the Bioformats 
 
 ## A quick example:
 
+Here is a short interactive session using Window's `cmd.exe`:
+
+<img src="./bfconvert_interactive.gif">
+
+What happens here:
+
+1. we see the prompt idicating the current working directory;
+1. we create a new folder `splitted` in the already existing subfolder `Data` using the `mkdir` command;
+1. we change the working directory to the subfolder `bftools`. this is where we unpacked our `bftools.zip` download.
+1. we call `bfconvert` and specify that our input file is `..\Data\bftools_demo\1642.lif` (first argument) and that the output should be series of tif files in the folder `Data\splitted` with the filenames starting with `split` followed by channel and Z-slice numbers (second argument)
+1. bfconvert then starts processing this large `.lif` file and we end up with many individual files (see illustration at the top of this page)
 
 
 
