@@ -20,6 +20,6 @@ Both on Mac/Linux and ond Windows the terminal will greet you with a command pro
 ### Concept of working directory and `PATH` environment
 
 
-### `.` and `..`
+### `.` , `..` and folder separators `/` (Linux/Mac), `\` (Windows)
 
 
